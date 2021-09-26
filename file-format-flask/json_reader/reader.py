@@ -1,3 +1,7 @@
+"""Creates JSON reader blueprint and adds URL rules from
+JSON MethodView implementation.
+"""
+
 from flask import Blueprint
 from .views import JsonReaderAPI
 

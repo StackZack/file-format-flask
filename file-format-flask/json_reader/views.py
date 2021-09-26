@@ -1,4 +1,6 @@
 from flask import views
+import json
+import os
 
 
 class JsonReaderAPI(views.MethodView):
@@ -15,7 +17,12 @@ class JsonReaderAPI(views.MethodView):
         :return: Output of JSON file.
         :rtype: dict
         """
-        test = {
-            "test": "test message",
-        }
-        return test
+        with open(
+            os.path.join(
+                os.path.dirname(__file__),
+                "resources",
+                "sample.json",
+            ),
+            "r",
+        ) as f:
+            return json.load(f)

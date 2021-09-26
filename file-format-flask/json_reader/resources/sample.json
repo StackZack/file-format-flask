@@ -1,0 +1,13 @@
+{
+    "sample_string": "sample value",
+    "sample_number": 2,
+    "sample_boolean": true,
+    "sample_array": [
+        1,
+        "blue",
+        false
+    ],
+    "sample_nested_object": {
+        "color": "yellow"
+    }
+}

@@ -1,6 +1,6 @@
 from flask import views
 import os
-from csv import reader
+from csv import DictReader
 
 
 class CsvReaderAPI(views.MethodView):
@@ -26,7 +26,13 @@ class CsvReaderAPI(views.MethodView):
             "r",
         ) as f:
             csv_data = []
-            sample_reader = reader(f, delimiter=',')
+            """Alternative to DictReader is the reader function.
+            The reader function will return a list of strings instead.
+            The rows could then be appended to the payload using built
+            in join function.
+            i.e. ",".join(row)
+            """
+            sample_reader = DictReader(f)
             for row in sample_reader:
-                csv_data.append(",".join(row))
+                csv_data.append(row)
             return {"data": csv_data}

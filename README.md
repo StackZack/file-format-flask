@@ -15,12 +15,16 @@ pip install -r requirements.txt  # Install required packages
 flask run
 ```
 
+## REST Endpoints
+|URL|Method|
+|---|------|
+|csv/read|GET|
+|json/read|GET|
+
 ## To-Do List
 1. Add routes and controllers for a variety of formats
-   1. JSON
-   2. CSV
-   3. Avro
-   4. Protocol Buffers
-   5. Parquet
-   6. ORC
+   1. Avro
+   2. Protocol Buffers
+   3. Parquet
+   4. ORC
 2. Add unit tests for endpoints that are added

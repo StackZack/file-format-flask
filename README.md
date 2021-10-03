@@ -23,8 +23,7 @@ flask run
 
 ## To-Do List
 1. Add routes and controllers for a variety of formats
-   1. Avro
-   2. Protocol Buffers
-   3. Parquet
-   4. ORC
+   1. Protocol Buffers
+   2. Parquet
+   3. ORC
 2. Add unit tests for endpoints that are added

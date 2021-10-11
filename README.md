@@ -21,10 +21,10 @@ flask run
 |csv/read|GET|
 |json/read|GET|
 |avro/read|GET|
-|parquest/read|GET|
+|parquet/read|GET|
+|orc/read|GET|
 
 ## To-Do List
 1. Add routes and controllers for a variety of formats
    1. Protocol Buffers
-   2. ORC
 2. Add unit tests for endpoints that are added

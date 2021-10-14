@@ -15,6 +15,12 @@ pip install -r requirements.txt  # Install required packages
 flask run
 ```
 
+## How To Test
+
+```bash
+pytest
+```
+
 ## REST Endpoints
 |URL|Method|
 |---|------|

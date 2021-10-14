@@ -11,14 +11,23 @@ pip install -r requirements.txt  # Install required packages
 
 ## How To Run
 
+### Via Command Line
+
 ```bash
 flask run
+```
+
+### Via Docker
+
+```bash
+docker build -t file-format-flask .  # Build docker image
+docker run --publish 5000:5000 file-format-flask  # Run docker container
 ```
 
 ## How To Test
 
 ```bash
-pytest
+pytest tests/
 ```
 
 ## REST Endpoints
@@ -31,6 +40,4 @@ pytest
 |orc/read|GET|
 
 ## To-Do List
-1. Add routes and controllers for a variety of formats
-   1. Protocol Buffers
-2. Add unit tests for endpoints that are added
+1. Add routes and controllers for Protocol Buffers
